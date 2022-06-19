@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "new": "cpp",
+    "ostream": "cpp",
+    "cstring": "cpp",
+    "string": "cpp",
+    "ranges": "cpp",
+    "iostream": "cpp",
+    "cmath": "cpp"
+  },
+  "cSpell.words": ["trav"],
+  "C_Cpp.errorSquiggles": "Disabled"
+}

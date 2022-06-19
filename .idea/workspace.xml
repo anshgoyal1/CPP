@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0907f145-8622-475e-b007-5d6f7bf6dfda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Assembly_Line_Scheduling/Assembly_Line_Scheduling.php" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Assembly_Line_Scheduling/Assembly_Line_Scheduling.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Dynamic_Programming_Rod_Cutting/Dynamic_Programming_Rod_Cutting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Dynamic_Programming_Rod_Cutting/Dynamic_Programming_Rod_Cutting.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Gcd/gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Gcd/gcd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Is_Binary_Search_Tree/isbst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Is_Binary_Search_Tree/isbst.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Kadane_Algorithm/Kandane_Algorithm.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Kadane_Algorithm/Kandane_Algorithm.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Karatsuba_Algorithm/karatsuba.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Karatsuba_Algorithm/karatsuba.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo_Ds_Notes/Pancake_Sort/Pancake_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algo_Ds_Notes/Pancake_Sort/Pancake_Sort.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Algo_Ds_Notes" />
+  </component>
+  <component name="ProjectId" id="1tcKhbQpQUzn53mLeWyeT5zjnc1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0907f145-8622-475e-b007-5d6f7bf6dfda" name="Default Changelist" comment="" />
+      <created>1623063067541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623063067541</updated>
+      <workItem from="1623063070748" duration="109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Merge_Sort/Merge_Sort.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Quick_Sort/Quick_Sort.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Linear_Search/Linear_Search.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Selection_Sort/Selection_Sort.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Tower_Of_Hanoi/Tower_Of_Hanoi.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Dijkstra_Algorithm/Dijkstra_Algorithm.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Euclidean_Algorithm/Euclidean_Algorithm.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Sieve_Of_Eratosthenes/Sieve_Of_Eratosthenes.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Tree_Inorder_Traversal/Tree_Inorder_Traversal.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Tree_Postorder_Traversal/Tree_Postorder_Traversal.js" />
+        <option value="$PROJECT_DIR$/Algo_Ds_Notes/Extended_Euclidean_Algorithm/Extended_Euclidean_Algorithm.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="454" y="211" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623063163824">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="454" y="211" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1623063163824" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1623063134467">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1623063134467" />
+  </component>
+</project>

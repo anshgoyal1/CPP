@@ -1,0 +1,9 @@
+1.
+Role of Control systrems in chemical process Industries-
+
+a.) Suppresing the influence of external disturbances on the chemical process to ensure the reactions go as planned and is safe and under constraints.
+
+b.) Controll systems ensures the stablity of a chemical process so that the reactions are within operational constraints and economical.
+
+c.) Control systems are used to optimize the performance of a chemical process so that we get better yield with minimal economy and within safety standards.
+

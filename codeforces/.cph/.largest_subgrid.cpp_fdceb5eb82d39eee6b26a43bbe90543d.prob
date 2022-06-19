@@ -1,0 +1,1 @@
+{"name":"Local: largest_subgrid","url":"/home/ansh/Files/CPP/Codeforces/largest_subgrid.cpp","tests":[{"id":1653276105273,"input":"3\n0 1 2\n3\n0 1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ansh/Files/CPP/Codeforces/largest_subgrid.cpp","group":"local","local":true}

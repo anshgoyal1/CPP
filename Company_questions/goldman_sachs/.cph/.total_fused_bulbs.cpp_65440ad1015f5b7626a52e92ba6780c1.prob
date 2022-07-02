@@ -1,0 +1,1 @@
+{"name":"Local: total_fused_bulbs","url":"/home/ansh/Desktop/CPP/Company_questions/goldman_sachs/total_fused_bulbs.cpp","tests":[{"id":1656420682577,"input":"010011\n2\n1 3\n3 5\n0 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ansh/Desktop/CPP/Company_questions/goldman_sachs/total_fused_bulbs.cpp","group":"local","local":true}

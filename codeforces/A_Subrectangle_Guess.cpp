@@ -173,6 +173,30 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n, m;
+    cin >> n >> m;
+
+    ll ma = INT_MIN;
+    ll a, b;
+    ll x;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin >> x;
+            if (x > ma)
+            {
+                ma = x;
+                a = i;
+                b = j;
+            }
+        }
+    }
+
+    int h = max(a + 1, n - a);
+    int w = max(b + 1, m - b);
+
+    cout << h * w << endl;
 }
 
 int main()

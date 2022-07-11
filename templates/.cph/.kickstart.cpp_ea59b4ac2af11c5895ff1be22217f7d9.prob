@@ -1,0 +1,1 @@
+{"name":"Local: kickstart","url":"/home/ansh/Desktop/CPP/templates/kickstart.cpp","tests":[{"id":1657450181397,"input":"1\n5 3\n6 2 5 1 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ansh/Desktop/CPP/templates/kickstart.cpp","group":"local","local":true}

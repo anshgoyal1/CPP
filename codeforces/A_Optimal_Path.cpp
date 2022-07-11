@@ -173,6 +173,21 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n, m;
+    cin >> n >> m;
+    ll sum = 0;
+    for (int i = 1; i <= m; i++)
+    {
+        sum += i;
+    }
+    int j = 2;
+    while (j <= n)
+    {
+        sum += (m * j);
+        j++;
+    }
+
+    cout << sum << endl;
 }
 
 int main()

@@ -173,6 +173,34 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+    string a;
+    cin >> a;
+    if (n == 0)
+    {
+        cout << "YES" << endl;
+        return;
+    }
+    if (n < 3)
+    {
+        cout << "NO" << endl;
+        return;
+    }
+    unordered_map<char, int> m;
+    for (auto it : a)
+    {
+        m[it]++;
+    }
+
+    if (m['B'] + m['C'] == 2 * (m['A'] + m['D']) && m['B'] != 0 && m['C'] != 0 && m['B'] == m['C'])
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
 }
 
 int main()

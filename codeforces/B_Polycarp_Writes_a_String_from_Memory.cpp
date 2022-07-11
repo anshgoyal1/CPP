@@ -173,6 +173,27 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    string s;
+    cin >> s;
+    ll n = s.length();
+    unordered_set<char> st;
+    ll ans = 0;
+    for (int i = 0; i < n; i++)
+    {
+        st.insert(s[i]);
+
+        if (i < n && st.size() == 3 && st.count(s[i + 1]) == 0)
+        {
+            ans++;
+            st.clear();
+        }
+    }
+
+    if (!st.empty())
+    {
+        ans++;
+    }
+    cout << ans << endl;
 }
 
 int main()

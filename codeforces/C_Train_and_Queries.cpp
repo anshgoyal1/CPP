@@ -173,6 +173,42 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n, k;
+    cin >> n >> k;
+
+    vi a(n);
+
+    rep(i, 0, n)
+    {
+        cin >> a[i];
+    }
+
+    unordered_map<int, vector<int>> mp;
+    rep(i, 0, n)
+    {
+        mp[a[i]].push_back(i);
+    }
+    ll x, y;
+    rep(i, 0, k)
+    {
+        cin >> x >> y;
+        // cout << x << " " << y << endl;
+        if (mp.count(x) == 0 || mp.count(y) == 0)
+        {
+            cout << "NO" << endl;
+        }
+        else
+        {
+            if (mp[x][0] < mp[y].back())
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+    }
 }
 
 int main()
@@ -184,6 +220,7 @@ int main()
 
     int t = 1;
     cin >> t;
+
     while (t--)
         solve();
     // TIME;

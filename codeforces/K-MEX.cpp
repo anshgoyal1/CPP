@@ -173,6 +173,58 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n, m, k;
+    cin >> n >> m >> k;
+
+    vi a(n);
+    rep(i, 0, n)
+    {
+        cin >> a[i];
+    }
+    if (k > m)
+    {
+        cout << "NO" << endl;
+        return;
+    }
+    sort(all(a));
+    map<int, int> mp;
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] >= k)
+        {
+            break;
+        }
+        else
+        {
+            mp[a[i]]++;
+        }
+    }
+
+    for (int i = 0; i < k; i++)
+    {
+        if (mp.count(i) == 0)
+        {
+            cout << "NO" << endl;
+            return;
+        }
+    }
+
+    int cnt = 0;
+    for (auto it : a)
+    {
+        if (it == k)
+            cnt++;
+    }
+
+    int d = n - cnt;
+    if (d >= m)
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
 }
 
 int main()

@@ -173,6 +173,27 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+    vi a(n);
+    rep(i, 0, n)
+    {
+        cin >> a[i];
+    }
+
+    ll suffixOp = 0;
+    ll ans = 0;
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        suffixOp += abs(a[i + 1] - a[i]);
+        if (a[i] > a[i + 1])
+        {
+            a[0] += a[i + 1] - a[i];
+        }
+    }
+    suffixOp += abs(a[0]);
+    cout << suffixOp << endl;
 }
 
 int main()

@@ -173,6 +173,70 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    string a;
+    cin >> a;
+    ll c;
+    cin >> c;
+
+    ll sum = 0;
+    unordered_map<char, int> m;
+    for (auto it : a)
+    {
+        sum += ((it - 'a') + 1);
+        m[it]++;
+    }
+
+    if (sum <= c)
+    {
+        cout << a << endl;
+        return;
+    }
+    priority_queue<pair<char, int>> pq;
+    for (auto it : m)
+    {
+        pq.push({it.first, it.second});
+    }
+
+    while (sum > c && !pq.empty())
+    {
+        char x = pq.top().first;
+        ll y = pq.top().second;
+        pq.pop();
+
+        while (y > 0 && sum > c)
+        {
+            sum -= ((x - 'a') + 1);
+            y--;
+        }
+
+        if (y != 0)
+        {
+            pq.push({x, y});
+        }
+    }
+
+    unordered_map<char, int> temp;
+    while (!pq.empty())
+    {
+        temp[pq.top().first] = pq.top().second;
+        pq.pop();
+    }
+
+    string ans;
+    for (auto it : a)
+    {
+        if (temp.count(it))
+        {
+            ans += it;
+            temp[it]--;
+            if (temp[it] == 0)
+            {
+                temp.erase(it);
+            }
+        }
+    }
+
+    cout << ans << endl;
 }
 
 int main()

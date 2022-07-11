@@ -173,6 +173,20 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+    string a = to_string(n);
+    string b;
+    b += '1';
+    for (int i = 0; i < a.length() - 1; i++)
+    {
+        b += '0';
+    }
+
+    ll c = stoll(b);
+
+    ll ans = n - c;
+    cout << ans << endl;
 }
 
 int main()

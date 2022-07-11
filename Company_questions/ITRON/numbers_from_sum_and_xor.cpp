@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
+
 void compute(unsigned long int s, unsigned long int x)
 {
     unsigned long int A = s - x;

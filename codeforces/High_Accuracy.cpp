@@ -173,6 +173,18 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+
+    int k = n % 3;
+    if (k == 0)
+    {
+        cout << 0 << endl;
+    }
+    else
+    {
+        cout << 3 - k << endl;
+    }
 }
 
 int main()

@@ -173,6 +173,31 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+    vi a(n);
+    rep(i, 0, n)
+    {
+        cin >> a[i];
+    }
+
+    if (n % 2 == 1)
+    {
+        cout << "Mike" << endl;
+        return;
+    }
+    else
+    {
+        int i = min_element(all(a)) - a.begin();
+        if (i % 2 == 0)
+        {
+            cout << "Joe" << endl;
+        }
+        else
+        {
+            cout << "Mike" << endl;
+        }
+    }
 }
 
 int main()

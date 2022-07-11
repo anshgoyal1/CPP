@@ -173,6 +173,21 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+
+    if (n <= 3)
+    {
+        cout << -1 << endl;
+        return;
+    }
+
+    for (int i = n; i > 4; i--)
+    {
+        cout << i << " ";
+    }
+
+    cout << "1 2 4 3" << endl;
 }
 
 int main()

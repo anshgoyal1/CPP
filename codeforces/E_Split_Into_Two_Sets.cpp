@@ -173,6 +173,54 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    ll n;
+    cin >> n;
+    ll x, y;
+    unordered_set<ll> st1;
+    unordered_set<ll> st2;
+    bool is = true;
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> x >> y;
+        // cout << x << " " << y << endl;
+        if (st1.count(x) == 0 && st1.count(y) == 0)
+        {
+            st1.insert(x);
+            st1.insert(y);
+        }
+        else
+        {
+            if (st2.count(x) == 0 && st2.count(y) == 0)
+            {
+                st2.insert(x);
+                st2.insert(y);
+            }
+            else
+            {
+                is = false;
+            }
+        }
+    }
+    ll i = 1;
+    while (i <= n)
+    {
+        if (st1.count(i) == 0 || st2.count(i) == 0)
+        {
+            // cout << i << endl;
+            cout << "NO" << endl;
+            return;
+        }
+        i++;
+    }
+
+    if (st2.empty() || is == false)
+    {
+        cout << "NO" << endl;
+        return;
+    }
+
+    cout << "YES" << endl;
 }
 
 int main()

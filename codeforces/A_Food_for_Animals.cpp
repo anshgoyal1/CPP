@@ -1,24 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
+#define display(x)               \
+    trav(a, x) cout << a << " "; \
+    cout << endl;
 
 void solve()
 {
     int a, b, c, x, y;
     cin >> a >> b >> c >> x >> y;
 
-    int p = 0;
-    if (a < x)
-    {
-        p = x - a;
-    }
-    int q = 0;
-    if (b < y)
-    {
-        q = y - b;
-    }
+    x -= a;
+    y -= b;
 
-    if (p + q <= c)
+    if (x <= 0 && y <= 0)
+    {
+        cout << "YES" << endl;
+    }
+    else if (max(x, 0LL) + max(y, 0LL) <= c)
     {
         cout << "YES" << endl;
     }
@@ -34,13 +33,12 @@ int32_t main()
     cin.tie(0);
     cout.tie(0);
 
-    int t;
+    int t = 1;
     cin >> t;
 
     while (t--)
-    {
+
         solve();
-    }
 
     return 0;
 }

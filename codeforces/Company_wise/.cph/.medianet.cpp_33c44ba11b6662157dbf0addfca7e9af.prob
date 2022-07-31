@@ -1,0 +1,1 @@
+{"name":"Local: medianet","url":"/home/ansh/Desktop/CPP/codeforces/Company_wise/medianet.cpp","tests":[{"id":1659154291319,"input":"4\n3 1 10 1\n6\n2 1 2\n3 1 2\n4 1 4\n3 2 1\n4 2 2\n4 3 1\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ansh/Desktop/CPP/codeforces/Company_wise/medianet.cpp","group":"local","local":true}

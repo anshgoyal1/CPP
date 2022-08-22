@@ -171,8 +171,56 @@ bool is_palindrome(string s, ll n)
     return true;
 }
 
+unordered_map<ll, ll> mp;
+
+void dfs(int u, unordered_map<ll, ll> &temp, int &sum, vector<int> adj[])
+{
+    if (temp.size() == 4)
+    {
+        return;
+    }
+
+    temp[u] = true;
+    sum += mp[u];
+
+    for (auto it : adj[u])
+    {
+        if (temp.find(it) == temp.end())
+        {
+            dfs(it, temp, sum, adj);
+        }
+    }
+}
 void solve()
 {
+    ll n, m;
+    cin >> n >> m;
+    for (int i = 0; i < n; i++)
+    {
+        ll x;
+        cin >> x;
+        mp[i] = x;
+    }
+
+    vector<int> adj[n];
+    for (int i = 0; i < m; i++)
+    {
+        ll x, y;
+        cin >> x >> y;
+        adj[x].push_back(y);
+    }
+
+    int ans = 0;
+    unordered_map<ll, ll> temp;
+    for (int i = 0; i < n; i++)
+    {
+        int sum = 0;
+        temp.clear();
+        dfs(i, temp, sum, adj);
+        ans = max(ans, sum);
+    }
+
+    cout << ans << endl;
 }
 
 int main()
@@ -186,5 +234,5 @@ int main()
     cin >> t;
     while (t--)
         solve();
-    // TIME;
+    TIME;
 }

@@ -2,36 +2,34 @@
 using namespace std;
 #define int long long
 const int mod = 1e9 + 7;
-#define YES cout << "Yes" << endl;
-#define NO cout << "No" << endl;
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
+#define endl '\n'
 
-double dp[305][305][305];
-
-double sol(int x, int y, int z)
-{
-    if (dp[x][y][z] != -1)
-    {
-        return dp[x][y][z];
-    }
-
-    if (x == 0 && y == 0 && z == 0)
-    {
-        return dp[x][y][z] = 0.0;
-    }
-
-    int soma = x + y + z;
-}
 void solve()
 {
     int n;
     cin >> n;
     vector<int> v(n);
-    unordered_map<int, int> mp;
     for (int i = 0; i < n; i++)
     {
         cin >> v[i];
-        mp[v[i]]++;
     }
+    sort(v.begin(), v.end());
+
+    int q;
+    cin >> q;
+    int l, r;
+    while (q--)
+    {
+        cin >> l >> r;
+
+        int x = lower_bound(v.begin(), v.end(), l) - v.begin();
+        int y = upper_bound(v.begin(), v.end(), r) - v.begin();
+
+        cout << y - x << " ";
+    }
+    cout << endl;
 }
 
 int32_t main()

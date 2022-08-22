@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-const int mod = 1e9 + 7;
-#define yes cout << "YES" << endl;
-#define no cout << "NO" << endl;
-#define endl '\n'
 
 void solve()
 {
@@ -15,6 +11,27 @@ void solve()
     {
         cin >> v[i];
     }
+    int k;
+    cin >> k;
+    vector<int> x;
+    for (int i = 0; i < k; i++)
+    {
+        x.push_back(v[i]);
+    }
+
+    sort(x.begin(), x.end());
+    int mx = x[0];
+    cout << mx << " ";
+    for (int i = k; i < n; i++)
+    {
+        if (v[i] > mx)
+        {
+            mx = v[i];
+        }
+
+        cout << mx << " ";
+    }
+    cout << endl;
 }
 
 int32_t main()

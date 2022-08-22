@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
-const int mod = 1e9 + 7;
-#define yes cout << "YES" << endl;
-#define no cout << "NO" << endl;
-#define endl '\n'
+#define display(x)               \
+    trav(a, x) cout << a << " "; \
+    cout << endl;
 
 void solve()
 {
@@ -15,6 +14,8 @@ void solve()
     {
         cin >> v[i];
     }
+
+    sort(v.begin(), v.end());
 }
 
 int32_t main()

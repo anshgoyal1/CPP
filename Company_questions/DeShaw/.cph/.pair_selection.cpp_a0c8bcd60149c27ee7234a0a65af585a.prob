@@ -1,0 +1,1 @@
+{"name":"Local: pair_selection","url":"/home/ansh/Desktop/CPP/Company_questions/DeShaw/pair_selection.cpp","tests":[{"id":1660101821113,"input":"3 4\n1 2 2\n1 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ansh/Desktop/CPP/Company_questions/DeShaw/pair_selection.cpp","group":"local","local":true}

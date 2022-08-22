@@ -8,12 +8,21 @@ const int mod = 1e9 + 7;
 
 void solve()
 {
-    int n;
-    cin >> n;
+    int n, k;
+    cin >> n >> k;
     vector<int> v(n);
     for (int i = 0; i < n; i++)
     {
         cin >> v[i];
+    }
+
+    int x;
+    for (int i = 0; i < k; i++)
+    {
+        cin >> x;
+        bool temp = binary_search(v.begin(), v.end(), x);
+        if (temp)
+            yes else no
     }
 }
 

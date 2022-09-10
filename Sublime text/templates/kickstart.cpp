@@ -17,42 +17,31 @@ bool powerof2(ll n)
 
 void solve()
 {
-    ll n, m;
-    cin >> n >> m;
-
-    vi a(n);
+    ll n, k;
+    cin >> n >> k;
+    vi v(n);
+    unordered_map<ll, ll> mp;
     for (int i = 0; i < n; i++)
     {
-        cin >> a[i];
+        cin >> v[i];
+        mp[v[i]]++;
     }
 
-    rsv(a);
-    int j = 0;
-    double ans = 0.0;
-    for (int i = 0; i < m - 1; i++)
+    for (auto it : mp)
     {
-        ans += a[j++];
+        if (it.second > 2)
+        {
+            cout << "NO" << endl;
+            return;
+        }
     }
 
-    vi arr;
-    for (int i = j; i < n; i++)
+    if (n > 2 * k)
     {
-        arr.push_back(a[i]);
+        cout << "NO" << endl;
+        return;
     }
-    int sz = arr.size();
-
-    if (sz & 1)
-    {
-        double med = (double)arr[sz / 2];
-        ans += med;
-    }
-    else
-    {
-        double med = (double)(arr[sz / 2] + arr[(sz - 1) / 2]) / 2;
-        ans += med;
-    }
-
-    cout << ans << endl;
+    cout << "YES" << endl;
 }
 
 int main()

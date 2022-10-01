@@ -175,6 +175,7 @@ void solve()
 {
     int a;
     cin >> a;
+    cout << a << endl;
 }
 
 int main()

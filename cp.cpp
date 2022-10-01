@@ -173,6 +173,8 @@ bool is_palindrome(string s, ll n)
 
 void solve()
 {
+    int a;
+    cin >> a;
 }
 
 int main()
